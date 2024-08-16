@@ -69,7 +69,7 @@ const RandomUser = () => {
   }, [refreshBtn]);
 
   return (
-    <div className="h-[91vh] w-full flex items-center text-black justify-center">
+    <div className="h-[92vh] w-full flex items-center text-black justify-center">
       <div className="box bg-[#B6B3F3] h-[85vh] w-[26vw] rounded-[15px] border-[7px] border-[white] p-3 flex flex-col">
         <div className="randomUserNav h-[8vh] flex items-center justify-center gap-[5vw]">
           <img className="cursor-pointer w-[5%]" src={`${Group}`} alt="" />
