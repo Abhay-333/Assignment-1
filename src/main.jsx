@@ -12,6 +12,7 @@ import RandomJoke from "./Components/RandomJoke.jsx";
 import CatList from "./Components/CatList.jsx";
 import Navbar from "./Components/Navbar.jsx";
 import Layout from "./Components/Layout.jsx";
+import { StrictMode } from "react";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
