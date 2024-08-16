@@ -57,7 +57,7 @@ const RandomUser = () => {
   };
 
   const handleLogo = () => {
-    window.location.href = "https://www.chaicode.com"; // Replace with your desired URL
+    window.location.href = "https://www.chaicode.com"; 
   };
 
   const handleRefresh = ()=>{

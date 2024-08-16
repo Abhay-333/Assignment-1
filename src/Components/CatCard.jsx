@@ -1,31 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const CatCard = () => {
+const CatCard = ({cat}) => {  
   return (
-    <div className="h-[80vh] w-[30vw] text-black bg-blue-400 rounded-xl shadow-lg shadow-black flex-shrink-0 overflow-hidden">
+    <div className="h-[80vh] w-[30vw] text-black bg-white rounded-xl shadow-lg shadow-black flex-shrink-0 overflow-hidden">
       <div className="catImage bg-green-400 h-[53%] w-full">
-        <img src="" alt="" />
+        <img className="h-full w-full object-cover" src={`${cat.image}`} alt="" />
+        {/* {console.log(cat.image)} */}
       </div>
 
       <div className="catDetails px-3 py-2">
-        <h1 className="catName text-[2vw] font-semibold">Lorem</h1>
+        <h1 className="catName text-[2vw] font-semibold">{cat.name}</h1>
 
         <div className="catDescr text-[1vw]">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem saepe
-            possimus eaque beatae necessitatibus omnis quos tempora molestiae
-          </p>
+          <p>{cat.description}</p>
         </div>
 
         <div className="catOrigin flex text-[1vw] mt-2 gap-5 items-center">
           <i className="font-semibold text-[1vw]">Origin</i>
-          <p>Thailand</p>
+          <p>{cat.origin}</p>
         </div>
 
         <i className="font-semibold text-[1vw]">Temperament</i>
         <div className="temperament ">
           <span className="px-[0.6vw] ml-[0vw] py-[0.2vw] font-semibold bg-gray-300 rounded-full text-[0.9vw]">
-            Independent
+            {cat.temperament}
           </span>
           <span className="px-[0.6vw] ml-[0.5vw] py-[0.2vw] font-semibold bg-gray-300 rounded-full text-[0.9vw]">
             Highly Intelligent
